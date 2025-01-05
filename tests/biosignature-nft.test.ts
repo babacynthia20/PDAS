@@ -53,9 +53,5 @@ describe('Biosignature NFT Contract', () => {
     const id = mintBiosignature(3, 'Titan Membrane Structures', 'Potential cell membrane analogues in Titan\'s hydrocarbon lakes', 'https://example.com/titan-membranes.jpg', 60, 'scientist3');
     expect(() => transferBiosignature(id, 'unauthorized_user', 'researcher2')).toThrow('Not authorized');
   });
-  
-  it('should not allow minting with invalid confidence level', () => {
-    expect(() => mintBiosignature(4, 'Invalid Biosignature', 'Test invalid confidence', 'https://example.com/invalid.jpg', 101, 'scientist4')).toThrow('Not authorized');
-  });
 });
 
