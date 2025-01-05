@@ -9,6 +9,11 @@ requirements = []
 path = 'contracts/analysis-marketplace.clar'
 clarity_version = 2
 epoch = 2.5
+
+[contracts.biosignature-nft]
+path = 'contracts/biosignature-nft.clar'
+clarity_version = 2
+epoch = 2.5
 [repl.analysis]
 passes = ['check_checker']
 
